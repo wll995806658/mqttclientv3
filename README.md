@@ -15,9 +15,15 @@ mqtt client v3:1.2.2
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://maven.google.com" }
+    }
+
+dependencies {
+    implementation 'org.eclipse.paho.client.mqttv3:mqttclientv3:1.2.2'
+}
 
 #### 参与贡献
 
