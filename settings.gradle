@@ -1,0 +1,2 @@
+include ':app', ':mqtclienttv3'
+rootProject.name='EasyMqttClient'
