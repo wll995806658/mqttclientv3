@@ -15,6 +15,10 @@
  */
 package org.eclipse.paho.client.mqttv3.internal.websocket;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -59,6 +63,7 @@ public class WebSocketSecureNetworkModule extends SSLNetworkModule{
 		log.setResourceName(clientId);
 	}
 
+	@RequiresApi(api = Build.VERSION_CODES.N)
 	public void start() throws IOException, MqttException {
 		super.start();
 		WebSocketHandshake handshake = new WebSocketHandshake(super.getInputStream(), super.getOutputStream(), uri, host, port, customWebSocketHeaders);
