@@ -6,8 +6,8 @@ publish {
     userOrg = 'leomoyan' //bintray账户下某个组织id
     groupId = 'org.eclipse.paho.client.mqttv3' //maven仓库下库的包名，一般为模块包名
     artifactId = 'mqttclientv3' //项目名称
-    publishVersion = '1.2.2' //版本号
-    desc = 'mqttclientv3 version:1.2.2' //项目介绍，可以不写
+    publishVersion = '1.2.3' //版本号
+    desc = 'mqttclientv3 version:1.2.3' //项目介绍，可以不写
     website = '' //项目主页，可以不写
 }
 
