@@ -15,6 +15,10 @@
  */
 package org.eclipse.paho.client.mqttv3.internal;
 
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -126,6 +130,7 @@ public class SSLNetworkModule extends TCPNetworkModule {
 		this.httpsHostnameVerificationEnabled = httpsHostnameVerificationEnabled;
 	}
 
+	@RequiresApi(api = Build.VERSION_CODES.N)
 	public void start() throws IOException, MqttException {
 		super.start();
 		setEnabledCiphers(enabledCiphers);
